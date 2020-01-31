@@ -71,6 +71,7 @@ public class PlayerEntity : MonoBehaviour
         {
             return;
         }
+        
         PlayerPart thrownPart = holdingParts[holdingParts.Count - 1];
         holdingParts.Remove(thrownPart);
         thrownPart.Collected = false;
@@ -85,17 +86,17 @@ public class PlayerEntity : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetButtonDown("Fire_P"+ playerIndex))
         {
             ThrowPart();
         }
     }
     void FixedUpdate()
     {
-        lookRotation = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        lookRotation = new Vector3(Input.GetAxis("Horizontal_P" + playerIndex), 0, -Input.GetAxis("Vertical_P" + playerIndex));
         rb.AddForce(lookRotation * normalSpeed);
 
-        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) {
+        if (Input.GetAxis("Horizontal_P" + playerIndex) == 0 && Input.GetAxis("Vertical_P" + playerIndex) == 0) {
 
         } else {
             rb.rotation = Quaternion.LookRotation(lookRotation);
