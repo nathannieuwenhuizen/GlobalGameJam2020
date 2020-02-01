@@ -108,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 3813006169489411606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482077371487123958}
   - {fileID: 6546295882316509662}
@@ -137,7 +137,7 @@ Rigidbody:
   m_GameObject: {fileID: 3813006169489411606}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -160,8 +160,8 @@ MonoBehaviour:
   playerIndex: 1
   canMove: 0
   startParts: 4
-  shootBoostSpeed: 700
-  normalSpeed: 0.045
+  shootBoostSpeed: 500
+  normalSpeed: 0
   gravitationalSpeed: 0.05
   partsParent: {fileID: 482077371487123958}
   partPrefab: {fileID: 1514163145459366072, guid: 9d388a5326b5c6d438d92816fc9130c5,
