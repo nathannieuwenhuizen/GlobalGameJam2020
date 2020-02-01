@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/Sound/countdown
   guid: 99b5c0f68ccc074abd9d20e718d9c895
   Banks:
-  - {fileID: 5746546405160776672}
+  - {fileID: -85460856592365089}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: event:/Music/music_main
   guid: f86d8f721415ad46bc9f6b104618ac3c
   Banks:
-  - {fileID: 5746546405160776672}
+  - {fileID: -85460856592365089}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -60,11 +60,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: fmod_project/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637161951147354455
+  lastModified: 637161981299897135
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 942
+  Exists: 1
+--- !u!114 &-85460856592365089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161981299897135
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -80,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -2664163174745536771}
-  - {fileID: 5746546405160776672}
+  - {fileID: -85460856592365089}
   EditorEvents:
   - {fileID: 588651904608150600}
   - {fileID: 8432004138134265422}
@@ -89,10 +107,10 @@ MonoBehaviour:
   - {fileID: -7562368435443185024}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5746546405160776672}
+  - {fileID: -85460856592365089}
   StringsBanks:
   - {fileID: -2664163174745536771}
-  stringsBankWriteTime: 637161951147354455
+  stringsBankWriteTime: 637161981299897135
   cacheVersion: 3
 --- !u!114 &588651904608150600
 MonoBehaviour:
@@ -109,7 +127,7 @@ MonoBehaviour:
   Path: event:/Sound/tentacle_tear_off
   guid: 3cf75b32d8499c48b032cf4148c648d8
   Banks:
-  - {fileID: 5746546405160776672}
+  - {fileID: -85460856592365089}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -132,7 +150,7 @@ MonoBehaviour:
   Path: event:/Sound/tentacle_get
   guid: 6638ed4046bc844486472f59fb6f68fd
   Banks:
-  - {fileID: 5746546405160776672}
+  - {fileID: -85460856592365089}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -157,7 +175,7 @@ MonoBehaviour:
   lastModified: 637161951147394336
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &8054720479765527503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +209,7 @@ MonoBehaviour:
   Path: event:/Sound/tentacle_splash
   guid: 483e8876c827fc4aa2921670ad4aaa7c
   Banks:
-  - {fileID: 5746546405160776672}
+  - {fileID: -85460856592365089}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
