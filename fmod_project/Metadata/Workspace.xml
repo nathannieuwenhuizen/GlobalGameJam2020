@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
 	<object class="Workspace" id="{816229da-db26-4abd-8405-236e26f7a64b}">
-		<property name="builtBanksOutputDirectory">
-			<value>../GlobalGameJam2020/Assets/Audio/Build</value>
-		</property>
+		<property name="builtBanksOutputDirectory" />
 		<property name="builtBanksMirrorBrowserFolderHierarchy">
 			<value>true</value>
 		</property>

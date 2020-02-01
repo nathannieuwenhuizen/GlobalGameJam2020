@@ -14,12 +14,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: fmod_project/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637161790488340767
+  lastModified: 637161863713203626
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 736
+    Value: 850
   Exists: 1
+--- !u!114 &-6627578340877268743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/tentacle_get
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/tentacle_get
+  guid: 6638ed4046bc844486472f59fb6f68fd
+  Banks:
+  - {fileID: -3222552962873129608}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 125
+--- !u!114 &-5465797878806959683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161798504920891
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3404301742169695479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161094046584714
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-3309592317806175119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,7 +94,7 @@ MonoBehaviour:
   Path: event:/Music/test
   guid: 94cbc7505dacd04eb28240a9a9326aac
   Banks:
-  - {fileID: 7606498033849962813}
+  - {fileID: -3222552962873129608}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -43,6 +102,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 35000
+--- !u!114 &-3222552962873129608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161863713163706
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,16 +134,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -7700791330819805104}
-  - {fileID: 7606498033849962813}
+  - {fileID: -3222552962873129608}
   EditorEvents:
   - {fileID: -3309592317806175119}
+  - {fileID: 1026034287093450378}
+  - {fileID: -6627578340877268743}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7606498033849962813}
+  - {fileID: -3222552962873129608}
   StringsBanks:
   - {fileID: -7700791330819805104}
-  stringsBankWriteTime: 637161790488340767
+  stringsBankWriteTime: 637161863713203626
   cacheVersion: 3
+--- !u!114 &1026034287093450378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_main
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_main
+  guid: f86d8f721415ad46bc9f6b104618ac3c
+  Banks:
+  - {fileID: -3222552962873129608}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 57600
 --- !u!114 &1883016712642539334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +184,60 @@ MonoBehaviour:
   Path: fmod_project/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637161094046584714
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3721071970824439662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161843365350966
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3841641906939167312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161852026929403
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6809365104873489106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161863249295474
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -102,4 +258,4 @@ MonoBehaviour:
   lastModified: 637161790488331206
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
