@@ -1022,7 +1022,7 @@ MonoBehaviour:
   countFrom: 3
   intervalBetweenCountDown: 0.5
   enableCountDown: 1
-  amountOfSpawnedParts: 10
+  amountOfSpawnedParts: 30
   sizeOfPlayfield: 30
   parts:
   - {fileID: 0}
