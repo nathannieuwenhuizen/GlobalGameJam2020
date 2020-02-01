@@ -6,10 +6,10 @@ using UnityEngine;
 public class FancyCam : MonoBehaviour
 {
     public GameObject[] targets;
-    float MinFOV = 10;
-    float MaxFOV = 100;
+    [SerializeField]float MinFOV = 10;
+    [SerializeField] float MaxFOV = 100;
 
-    float distanceFOVMultip = 1;
+    [SerializeField] float distanceFOVMultip = 1;
 
     Camera cam;
     private void Start() {
