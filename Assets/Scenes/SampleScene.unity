@@ -957,6 +957,7 @@ GameObject:
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
+  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1096,6 +1097,22 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e317233a433981043b2174a02750a95f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets: []
+  MinFOV: 40
+  MaxFOV: 100
+  distanceFOVMultip: 1
 --- !u!1 &1002407977
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,6 +2170,11 @@ PrefabInstance:
       propertyPath: finishLine
       value: 
       objectReference: {fileID: 376160309022023380}
+    - target: {fileID: 2075281943084807718, guid: 3ed814496206f374098ad8077c4d31ef,
+        type: 3}
+      propertyPath: fancyCam
+      value: 
+      objectReference: {fileID: 963194232}
     - target: {fileID: 2075281943084807719, guid: 3ed814496206f374098ad8077c4d31ef,
         type: 3}
       propertyPath: m_LocalPosition.x
