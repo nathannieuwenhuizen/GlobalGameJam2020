@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    [SerializeField]
+    private bool useSettings = false;
+
     [Header("round information")]
     [SerializeField]
     private int amountOfLaps = 3;
@@ -60,6 +63,11 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        if (useSettings)
+        {
+            amountOfPlayers = Globals.AMOUNT_PLAYERS;
+            amountOfLaps = Globals.AMOUNT_LAPS;
+        }
         CurrentLap = 1;
 
         ActivatesPlayers();
