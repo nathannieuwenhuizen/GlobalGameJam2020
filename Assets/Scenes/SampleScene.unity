@@ -1483,6 +1483,8 @@ MonoBehaviour:
   parts:
   - {fileID: 0}
   - {fileID: 0}
+  dottedMaterial: {fileID: 2100000, guid: d34495ed0454d664ebcfcbee3badb8a9, type: 2}
+  dotLineSpeed: 2
   gameIsRunning: 1
 --- !u!4 &1721103871
 Transform:
@@ -1841,6 +1843,21 @@ PrefabInstance:
     - target: {fileID: 4631040888696438067, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7378167071959194754, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: m_MotionVectors
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7378167071959194754, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: m_Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7378167071959194754, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: m_UseWorldSpace
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
