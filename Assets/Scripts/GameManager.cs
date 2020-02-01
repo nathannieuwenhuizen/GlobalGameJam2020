@@ -49,6 +49,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> parts;
 
+    [Header("finish info")]
+    [SerializeField]
+    private FinishLine finishLine;
+
     [Header("overig")]
     [SerializeField]
     private Material dottedMaterial;
@@ -72,6 +76,11 @@ public class GameManager : MonoBehaviour
             amountOfLaps = Globals.AMOUNT_LAPS;
         }
         CurrentLap = 1;
+
+        if (finishLine != null)
+        {
+            finishLine.SpawnRings(amountOfLaps);
+        }
 
         ActivatesPlayers();
         SpawnRandomParts();
@@ -131,6 +140,10 @@ public class GameManager : MonoBehaviour
         {
             leadingPlayer = player;
             CurrentLap = player.CurrentLap;
+            if (finishLine != null)
+            {
+                finishLine.RemoveRing();
+            }
         }
     }
     public void End()

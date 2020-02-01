@@ -28,6 +28,8 @@ public class PlayerPart : MonoBehaviour
         boxCol = GetComponent<BoxCollider>();
         rb = GetComponent<Rigidbody>();
         rb.mass = Random.Range(minMass, maxMass);
+
+        Twitch();
     }
 
     public bool Collected
@@ -78,9 +80,13 @@ public class PlayerPart : MonoBehaviour
             transform.position += (new Vector3(TrackDirection().x, 0, TrackDirection().y) * gravitationalSpeed);
         }
     }
+    public void Twitch()
+    {
+        transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
+    }
     private void FixedUpdate() {
         if (!collected && Random.Range(0,200) == 1) {
-            transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
+            Twitch();
         }
     }
 }
