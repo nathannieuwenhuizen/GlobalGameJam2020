@@ -41,8 +41,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int amountOfSpawnedParts = 10;
     [SerializeField]
-    private float sizeOfPlayfield = 17f;
-    [SerializeField]
     private float minRingSize = 5f;
     [SerializeField]
     private float maxRingSize = 7f;
