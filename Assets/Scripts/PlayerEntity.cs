@@ -24,6 +24,8 @@ public class PlayerEntity : MonoBehaviour
     private float shootBoostSpeed;
     [SerializeField]
     private float normalSpeed = 100f;
+    [SerializeField]
+    private float gravitationalSpeed = 1f;
 
     [SerializeField]
     private Transform partsParent;
@@ -46,18 +48,20 @@ public class PlayerEntity : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<PlayerPart>())
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.GetComponent<PlayerPart>())
         {
-            PlayerPart part = collision.gameObject.GetComponent<PlayerPart>();
+            PlayerPart part = other.gameObject.GetComponent<PlayerPart>();
             if (!part.Collected)
             {
                 GainPart(part);
             }
         }
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
         string tag = other.gameObject.tag;
         if (tag == "midway")
         {
@@ -107,15 +111,45 @@ public class PlayerEntity : MonoBehaviour
         {
             ThrowPart();
         }
+        if (facesClockwise())
+        {
+            Debug.Log("Faces forwards");
+        } else
+        {
+            Debug.Log("Faces backwards");
+        }
+
     }
+
+    public bool facesClockwise()
+    {
+        Vector2 forward = new Vector2(transform.forward.x, transform.forward.z);
+        float angle = Vector2.Angle(
+            forward,
+            TrackDirection()
+            );
+        return angle > 90;
+    }
+    public Vector2 TrackDirection()
+    {
+        return -Vector2.Perpendicular(new Vector2(transform.localPosition.x, transform.localPosition.z).normalized);
+    }
+
     void FixedUpdate()
     {
+        //getting input to aim
         lookRotation = new Vector3(Input.GetAxis("Horizontal_P" + playerIndex), 0, -Input.GetAxis("Vertical_P" + playerIndex));
         if (canMove)
         {
+            //look rotational speed
             rb.AddForce(lookRotation * normalSpeed);
+
+            //gravitational speed
+            Debug.Log("track direction: " + TrackDirection());
+            transform.position += (new Vector3(TrackDirection().x, 0, TrackDirection().y) * gravitationalSpeed);
         }
 
+        //rotates
         if (Input.GetAxis("Horizontal_P" + playerIndex) == 0 && Input.GetAxis("Vertical_P" + playerIndex) == 0) {
 
         } else {

@@ -17,6 +17,10 @@ public class PlayerPart : MonoBehaviour
     [SerializeField]
     private float maxRotationalForce = 5f;
 
+    [SerializeField]
+    private float gravitationalSpeed = 1f;
+
+
     private BoxCollider boxCol;
     // Start is called before the first frame update
     void Start()
@@ -50,8 +54,6 @@ public class PlayerPart : MonoBehaviour
                 rb.isKinematic = true;
 
             }
-
-            Debug.Log("rb: " + rb);
             boxCol.enabled = !value;
         }
     }
@@ -64,12 +66,16 @@ public class PlayerPart : MonoBehaviour
             Random.Range(-maxRotationalForce, maxRotationalForce),
             Random.Range(-maxRotationalForce, maxRotationalForce)
             );
-
     }
-
-    // Update is called once per frame
+    public Vector2 TrackDirection()
+    {
+        return -Vector2.Perpendicular(new Vector2(transform.localPosition.x, transform.localPosition.z).normalized);
+    }
     void Update()
     {
-        
+        if (!Collected && GameManager.instance.gameIsRunning)
+        {
+            transform.position += (new Vector3(TrackDirection().x, 0, TrackDirection().y) * gravitationalSpeed);
+        }
     }
 }

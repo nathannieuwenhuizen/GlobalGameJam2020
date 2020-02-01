@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> parts;
 
+    public bool gameIsRunning = true;
+
     private void Awake()
     {
         if (instance == null)
@@ -78,10 +80,9 @@ public class GameManager : MonoBehaviour
                 Random.Range(-sizeOfPlayfield, sizeOfPlayfield)
                 );
             Instantiate(parts[randomIndex]).transform.position = spawnPos;
-
         }
-
     }
+
     public void ActivatesPlayers()
     {
         List<PlayerEntity> foundPlayers = new List<PlayerEntity>(Transform.FindObjectsOfType<PlayerEntity>());
@@ -111,6 +112,7 @@ public class GameManager : MonoBehaviour
     }
     public void End()
     {
+        gameIsRunning = false;
         countDownText.text = "Finish! Player " + (players.IndexOf(leadingPlayer) + 1) + "wins!";
         foreach (PlayerEntity player in players)
         {
@@ -135,15 +137,15 @@ public class GameManager : MonoBehaviour
     }
     public void StartCountDown()
     {
-        StartCoroutine(CountDown(countFrom));
-    }
-    IEnumerator CountDown(int number)
-    {
+        gameIsRunning = false;
         foreach (PlayerEntity player in players)
         {
             player.canMove = false;
         }
-
+        StartCoroutine(CountDown(countFrom));
+    }
+    IEnumerator CountDown(int number)
+    {
         countDownText.text = number + "";
         if (number == 0)
         {
@@ -152,6 +154,8 @@ public class GameManager : MonoBehaviour
             {
                 player.canMove = true;
             }
+            gameIsRunning = true;
+
             yield return new WaitForSeconds(intervalBetweenCountDown);
             countDownText.text = "";
 
@@ -163,7 +167,7 @@ public class GameManager : MonoBehaviour
         }
 
     }
-    // Update is called once per frame
+
     void Update()
     {
         
