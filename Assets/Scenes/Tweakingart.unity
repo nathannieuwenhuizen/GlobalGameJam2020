@@ -416,6 +416,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1150308975, guid: 071b8aa8140946e4ea61ebbadd1e0236, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150308976, guid: 071b8aa8140946e4ea61ebbadd1e0236, type: 3}
+      propertyPath: m_MinParticleSize
+      value: 1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150308976, guid: 071b8aa8140946e4ea61ebbadd1e0236, type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1.66
+      objectReference: {fileID: 0}
     - target: {fileID: 4285945459559510940, guid: 071b8aa8140946e4ea61ebbadd1e0236,
         type: 3}
       propertyPath: m_LocalPosition.x
