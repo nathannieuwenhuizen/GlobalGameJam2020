@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
-  BonesCount: 2
+  BonesCount: 8
   Target: {fileID: 0}
   Pole: {fileID: 0}
   LastBone: {fileID: 4109426263287537745}
