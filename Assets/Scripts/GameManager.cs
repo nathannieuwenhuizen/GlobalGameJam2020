@@ -49,9 +49,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> parts;
 
-    [Header("finish info")]
+    [Header("in game objects")]
     [SerializeField]
     private FinishLine finishLine;
+    [SerializeField]
+    private FancyCam fancyCam;
 
     [Header("overig")]
     [SerializeField]
@@ -109,7 +111,6 @@ public class GameManager : MonoBehaviour
                 );
 
             int randomIndex = Random.Range(0, parts.Count);
-            
 
             Instantiate(parts[randomIndex]).transform.position = spawnPos;
         }
@@ -117,9 +118,11 @@ public class GameManager : MonoBehaviour
 
     public void ActivatesPlayers()
     {
+        //find the players
         List<PlayerEntity> foundPlayers = new List<PlayerEntity>(Transform.FindObjectsOfType<PlayerEntity>());
         players = new List<PlayerEntity>();
 
+        //disable and enable players
         for (int i = 0; i < foundPlayers.Count; i++)
         {
             if (i >= amountOfPlayers)
@@ -132,6 +135,14 @@ public class GameManager : MonoBehaviour
                 players.Add(foundPlayers[i]);
             }
         }
+
+        //apply active players to fancy cam
+        GameObject[] targets = new GameObject[players.Count];
+        for (int i = 0; i < targets.Length; i++)
+        {
+            targets[i] = players[i].gameObject;
+        }
+        fancyCam.targets = targets;
     }
 
     public void NextLap(PlayerEntity player)
@@ -148,6 +159,8 @@ public class GameManager : MonoBehaviour
     }
     public void End()
     {
+        fancyCam.targets = new List<GameObject> { leadingPlayer.gameObject }.ToArray();
+
         gameIsRunning = false;
         countDownText.text = "Finish! Player " + (players.IndexOf(leadingPlayer) + 1) + "wins!";
         foreach (PlayerEntity player in players)
