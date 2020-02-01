@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour
     private int amountOfSpawnedParts = 10;
     [SerializeField]
     private float sizeOfPlayfield = 17f;
+    [SerializeField]
+    private float minRingSize = 5f;
+    [SerializeField]
+    private float maxRingSize = 7f;
+
 
     [SerializeField]
     private List<GameObject> parts;
@@ -87,12 +92,18 @@ public class GameManager : MonoBehaviour
         }
         for (int i = 0; i < amountOfSpawnedParts; i++)
         {
-            int randomIndex = Random.Range(0, parts.Count);
+            float angle = Random.Range(0, Mathf.PI * 2);
+            float amplitude = Random.Range(minRingSize, maxRingSize);
+
             Vector3 spawnPos = new Vector3(
-                Random.Range(-sizeOfPlayfield, sizeOfPlayfield),
+                Mathf.Cos(angle) * amplitude,
                 0,
-                Random.Range(-sizeOfPlayfield, sizeOfPlayfield)
+                Mathf.Sin(angle) * amplitude
                 );
+
+            int randomIndex = Random.Range(0, parts.Count);
+            
+
             Instantiate(parts[randomIndex]).transform.position = spawnPos;
         }
     }
