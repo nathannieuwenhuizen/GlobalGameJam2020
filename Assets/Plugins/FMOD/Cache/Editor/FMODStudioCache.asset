@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: fmod_project/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637161852026958951
+  lastModified: 637161863713203626
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: event:/Sound/tentacle_get
   guid: 6638ed4046bc844486472f59fb6f68fd
   Banks:
-  - {fileID: 3841641906939167312}
+  - {fileID: -3222552962873129608}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -94,7 +94,7 @@ MonoBehaviour:
   Path: event:/Music/test
   guid: 94cbc7505dacd04eb28240a9a9326aac
   Banks:
-  - {fileID: 3841641906939167312}
+  - {fileID: -3222552962873129608}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -102,6 +102,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 35000
+--- !u!114 &-3222552962873129608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161863713163706
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,17 +134,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -7700791330819805104}
-  - {fileID: 3841641906939167312}
+  - {fileID: -3222552962873129608}
   EditorEvents:
   - {fileID: -3309592317806175119}
   - {fileID: 1026034287093450378}
   - {fileID: -6627578340877268743}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 3841641906939167312}
+  - {fileID: -3222552962873129608}
   StringsBanks:
   - {fileID: -7700791330819805104}
-  stringsBankWriteTime: 637161852026958951
+  stringsBankWriteTime: 637161863713203626
   cacheVersion: 3
 --- !u!114 &1026034287093450378
 MonoBehaviour:
@@ -143,7 +161,7 @@ MonoBehaviour:
   Path: event:/Music/music_main
   guid: f86d8f721415ad46bc9f6b104618ac3c
   Banks:
-  - {fileID: 3841641906939167312}
+  - {fileID: -3222552962873129608}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -204,7 +222,25 @@ MonoBehaviour:
   lastModified: 637161852026929403
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &6809365104873489106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161863249295474
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7606498033849962813
 MonoBehaviour:
   m_ObjectHideFlags: 0
