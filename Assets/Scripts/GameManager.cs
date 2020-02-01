@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int countFrom = 3;
     [SerializeField]
-    private float intervalBetweenCountDown = 0.5f;
+    private float intervalBetweenCountDown = 1.0f;
     [SerializeField]
     private bool enableCountDown = true;
 
@@ -196,6 +196,7 @@ public class GameManager : MonoBehaviour
         {
             player.canMove = false;
         }
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/countdown");
         StartCoroutine(CountDown(countFrom));
     }
     IEnumerator CountDown(int number)
