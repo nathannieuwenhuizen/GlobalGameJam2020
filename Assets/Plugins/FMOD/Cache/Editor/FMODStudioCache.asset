@@ -1,164 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8831735789803987617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound/tentacle_tear_off
-  m_EditorClassIdentifier: 
-  Path: event:/Sound/tentacle_tear_off
-  guid: 3cf75b32d8499c48b032cf4148c648d8
-  Banks:
-  - {fileID: 2317683762526812080}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 252
---- !u!114 &-5868498571247897576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/music_main
-  m_EditorClassIdentifier: 
-  Path: event:/Music/music_main
-  guid: f86d8f721415ad46bc9f6b104618ac3c
-  Banks:
-  - {fileID: 2317683762526812080}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 57600
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 3976955054805712551}
-  - {fileID: 2317683762526812080}
-  EditorEvents:
-  - {fileID: -8831735789803987617}
-  - {fileID: 5333496143592824788}
-  - {fileID: 4688616937019446282}
-  - {fileID: 7324209193728756210}
-  - {fileID: -5868498571247897576}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 2317683762526812080}
-  StringsBanks:
-  - {fileID: 3976955054805712551}
-  stringsBankWriteTime: 637161936425485298
-  cacheVersion: 3
---- !u!114 &2317683762526812080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: fmod_project/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637161936425435485
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &3976955054805712551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: fmod_project/Build/Desktop/Master.strings.bank
-  SubDir: 
-  lastModified: 637161936425485298
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 942
-  Exists: 1
---- !u!114 &4688616937019446282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound/tentacle_get
-  m_EditorClassIdentifier: 
-  Path: event:/Sound/tentacle_get
-  guid: 6638ed4046bc844486472f59fb6f68fd
-  Banks:
-  - {fileID: 2317683762526812080}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 125
---- !u!114 &5333496143592824788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound/tentacle_splash
-  m_EditorClassIdentifier: 
-  Path: event:/Sound/tentacle_splash
-  guid: 483e8876c827fc4aa2921670ad4aaa7c
-  Banks:
-  - {fileID: 2317683762526812080}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 520
---- !u!114 &7324209193728756210
+--- !u!114 &-8877438488154107581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,7 +15,7 @@ MonoBehaviour:
   Path: event:/Sound/countdown
   guid: 99b5c0f68ccc074abd9d20e718d9c895
   Banks:
-  - {fileID: 2317683762526812080}
+  - {fileID: 8054720479765527503}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -181,3 +23,161 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3495
+--- !u!114 &-7562368435443185024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_main
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_main
+  guid: f86d8f721415ad46bc9f6b104618ac3c
+  Banks:
+  - {fileID: 8054720479765527503}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 57600
+--- !u!114 &-2664163174745536771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637161951218832985
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 942
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -2664163174745536771}
+  - {fileID: 8054720479765527503}
+  EditorEvents:
+  - {fileID: 588651904608150600}
+  - {fileID: 8432004138134265422}
+  - {fileID: 4386987089699607298}
+  - {fileID: -8877438488154107581}
+  - {fileID: -7562368435443185024}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 8054720479765527503}
+  StringsBanks:
+  - {fileID: -2664163174745536771}
+  stringsBankWriteTime: 637161951218832985
+  cacheVersion: 3
+--- !u!114 &588651904608150600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/tentacle_tear_off
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/tentacle_tear_off
+  guid: 3cf75b32d8499c48b032cf4148c648d8
+  Banks:
+  - {fileID: 8054720479765527503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 252
+--- !u!114 &4386987089699607298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/tentacle_get
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/tentacle_get
+  guid: 6638ed4046bc844486472f59fb6f68fd
+  Banks:
+  - {fileID: 8054720479765527503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 125
+--- !u!114 &8054720479765527503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161951218823256
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8432004138134265422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/tentacle_splash
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/tentacle_splash
+  guid: 483e8876c827fc4aa2921670ad4aaa7c
+  Banks:
+  - {fileID: 8054720479765527503}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 520
