@@ -7,6 +7,7 @@ public class PlayerEntity : MonoBehaviour
 
     private List<PlayerPart> holdingParts;
     private Rigidbody rb;
+    private LineRenderer lr;
 
     public bool reachedMidway = false;
     private int currentLap = 1;
@@ -37,7 +38,8 @@ public class PlayerEntity : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        lr = GetComponent<LineRenderer>();
+        lr.enabled = false;
         holdingParts = new List<PlayerPart> { };
         for (int i = 0; i < startParts; i++)
         {
@@ -83,20 +85,30 @@ public class PlayerEntity : MonoBehaviour
         collectedPart.transform.localRotation = Quaternion.Euler(Vector3.zero);
     }
 
+    public void Aim()
+    {
+        if (holdingParts.Count == 0)
+        {
+            return;
+        }
+
+        lr.enabled = true;
+    }
+
     public void ThrowPart()
     {
         if (holdingParts.Count == 0)
         {
             return;
         }
-        
+
+        lr.enabled = false;
         PlayerPart thrownPart = holdingParts[holdingParts.Count - 1];
         holdingParts.Remove(thrownPart);
         thrownPart.Collected = false;
         thrownPart.transform.parent = null;
 
         thrownPart.Throw(transform.forward);
-        Debug.Log("throw! rb: " + rb);
 
         rb.AddForce(transform.forward * shootBoostSpeed);
 
@@ -104,10 +116,21 @@ public class PlayerEntity : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire_P"+ playerIndex) && canMove)
+        if (!canMove)
+        {
+            lr.enabled = false;
+        }
+        if (Input.GetButtonDown("Fire_P" + playerIndex) && canMove)
+        {
+            Aim();
+        }
+
+        if (Input.GetButtonUp("Fire_P" + playerIndex) && canMove)
         {
             ThrowPart();
         }
+
+
         if (facesClockwise())
         {
             Debug.Log("Faces forwards");

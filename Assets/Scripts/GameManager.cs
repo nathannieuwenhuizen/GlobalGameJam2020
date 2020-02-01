@@ -43,6 +43,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> parts;
 
+    [Header("overig")]
+    [SerializeField]
+    private Material dottedMaterial;
+    [SerializeField]
+    private float dotLineSpeed = 2f;
+
     public bool gameIsRunning = true;
 
     private void Awake()
@@ -170,6 +176,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        dottedMaterial.mainTextureOffset = new Vector2(-Time.time * dotLineSpeed, 0);
     }
 }
