@@ -76,6 +76,7 @@ public class PlayerEntity : MonoBehaviour
 
     public void GainPart(PlayerPart collectedPart)
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/tentacle_get");
         holdingParts.Add(collectedPart);
 
         collectedPart.gameObject.transform.parent = partsParent;
@@ -102,6 +103,7 @@ public class PlayerEntity : MonoBehaviour
             return;
         }
 
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/tentacle_get");
         lr.enabled = false;
         PlayerPart thrownPart = holdingParts[holdingParts.Count - 1];
         holdingParts.Remove(thrownPart);
