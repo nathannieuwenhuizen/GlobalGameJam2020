@@ -20,9 +20,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GroundRing2
+  m_Name: Ring4
   m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _GLOSSYREFLECTIONS_OFF
+  m_ShaderKeywords: PIXELSNAP_ON _ALPHAPREMULTIPLY_ON _GLOSSYREFLECTIONS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -38,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 4f6487b5a4f7c234f9b08474fd3cc409, type: 3}
+        m_Texture: {fileID: 2800000, guid: f945edfc55a38374ea0e60d1d2a6fcab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -62,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4f6487b5a4f7c234f9b08474fd3cc409, type: 3}
+        m_Texture: {fileID: 2800000, guid: f945edfc55a38374ea0e60d1d2a6fcab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -82,7 +82,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - PixelSnap: 0
+    - PixelSnap: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -112,13 +112,8 @@ Material:
     - _WorkflowMode: 0
     - _ZWrite: 0
     m_Colors:
-<<<<<<< HEAD
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0, g: 1, b: 0.99020815, a: 1}
-=======
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.46666667}
-    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
->>>>>>> 811da7a79afd2a87975d67b5264a109ee39a544e
+    - _BaseColor: {r: 1, g: 0.62911344, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.54586947, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
