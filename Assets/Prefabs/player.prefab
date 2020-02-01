@@ -160,8 +160,8 @@ MonoBehaviour:
   playerIndex: 1
   canMove: 0
   startParts: 4
-  shootBoostSpeed: 500
-  normalSpeed: 0
+  shootBoostSpeed: 700
+  normalSpeed: 0.045
   gravitationalSpeed: 0.05
   partsParent: {fileID: 482077371487123958}
   partPrefab: {fileID: 1514163145459366072, guid: 9d388a5326b5c6d438d92816fc9130c5,
