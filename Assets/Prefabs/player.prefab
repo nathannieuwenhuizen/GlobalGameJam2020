@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c6bb3a144b470204c873d10b667a815b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -286,11 +286,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reachedMidway: 0
-  playerIndex: 3
+  playerIndex: 1
   canMove: 0
-  startParts: 5
-  shootBoostSpeed: 300
-  normalSpeed: 0.5
+  startParts: 4
+  shootBoostSpeed: 500
+  normalSpeed: 0
   gravitationalSpeed: 0.05
   partsParent: {fileID: 482077371487123958}
   partPrefab: {fileID: 1514163145459366072, guid: 9d388a5326b5c6d438d92816fc9130c5,
