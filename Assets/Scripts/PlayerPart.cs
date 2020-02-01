@@ -78,4 +78,9 @@ public class PlayerPart : MonoBehaviour
             transform.position += (new Vector3(TrackDirection().x, 0, TrackDirection().y) * gravitationalSpeed);
         }
     }
+    private void FixedUpdate() {
+        if (!collected && Random.Range(0,200) == 1) {
+            transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
+        }
+    }
 }
