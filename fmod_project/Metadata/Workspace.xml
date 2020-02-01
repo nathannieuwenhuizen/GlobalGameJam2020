@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="Workspace" id="{816229da-db26-4abd-8405-236e26f7a64b}">
+		<property name="builtBanksOutputDirectory">
+			<value>../GlobalGameJam2020/Assets/Audio/Build</value>
+		</property>
+		<property name="builtBanksMirrorBrowserFolderHierarchy">
+			<value>true</value>
+		</property>
+		<relationship name="masterEventFolder">
+			<destination>{9d63a81c-0002-451c-b6f5-d605cd236dc3}</destination>
+		</relationship>
+		<relationship name="masterTagFolder">
+			<destination>{33cd80fb-f14c-44a6-bcf4-a7953552519a}</destination>
+		</relationship>
+		<relationship name="masterEffectPresetFolder">
+			<destination>{6c49d867-864a-4e71-8675-9951e3acfccf}</destination>
+		</relationship>
+		<relationship name="masterParameterPresetFolder">
+			<destination>{bfdbd22f-59f2-40b2-b66a-0c8df2ba4132}</destination>
+		</relationship>
+		<relationship name="masterBankFolder">
+			<destination>{2f7e267f-8724-43df-bde3-09103a3f0f2a}</destination>
+		</relationship>
+		<relationship name="masterAssetFolder">
+			<destination>{e2f907bd-b9dc-4080-af46-d1b28cfae6a2}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{3ee9894a-6400-429e-abdf-c43534143988}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{7176293a-adbf-4a74-b273-d558c3083845}</destination>
+		</relationship>
+	</object>
+</objects>

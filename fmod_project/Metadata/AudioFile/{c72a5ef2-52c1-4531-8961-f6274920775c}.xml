@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c72a5ef2-52c1-4531-8961-f6274920775c}">
+		<property name="assetPath">
+			<value>rumble_f_001.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>120.08733333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e2f907bd-b9dc-4080-af46-d1b28cfae6a2}</destination>
+		</relationship>
+	</object>
+</objects>
