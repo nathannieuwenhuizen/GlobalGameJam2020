@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int countFrom = 3;
     [SerializeField]
-    private float intervalBetweenCountDown = 0.5f;
+    private float intervalBetweenCountDown = 1.0f;
     [SerializeField]
     private bool enableCountDown = true;
 
@@ -142,7 +142,10 @@ public class GameManager : MonoBehaviour
         {
             targets[i] = players[i].gameObject;
         }
-        fancyCam.targets = targets;
+        if (fancyCam != null)
+        {
+            fancyCam.targets = targets;
+        }
     }
 
     public void NextLap(PlayerEntity player)
@@ -159,8 +162,10 @@ public class GameManager : MonoBehaviour
     }
     public void End()
     {
-        fancyCam.targets = new List<GameObject> { leadingPlayer.gameObject }.ToArray();
-
+        if (fancyCam != null)
+        {
+            fancyCam.targets = new List<GameObject> { leadingPlayer.gameObject }.ToArray();
+        }
         gameIsRunning = false;
         countDownText.text = "Finish! Player " + (players.IndexOf(leadingPlayer) + 1) + "wins!";
         foreach (PlayerEntity player in players)
@@ -191,6 +196,7 @@ public class GameManager : MonoBehaviour
         {
             player.canMove = false;
         }
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/countdown");
         StartCoroutine(CountDown(countFrom));
     }
     IEnumerator CountDown(int number)
