@@ -8,9 +8,12 @@ public class PlayerEntity : MonoBehaviour
     private List<PlayerPart> holdingParts;
     private Rigidbody rb;
 
+    public bool reachedMidway = false;
+    private int currentLap = 1;
 
-    [SerializeField]
-    private int playerIndex = 0;
+    public int playerIndex = 0;
+
+    public bool canMove = false;
 
 
     [SerializeField]
@@ -54,6 +57,21 @@ public class PlayerEntity : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        string tag = other.gameObject.tag;
+        if (tag == "midway")
+        {
+            reachedMidway = true;
+        }
+        if (tag == "finish" && reachedMidway)
+        {
+            reachedMidway = false;
+            currentLap++;
+            GameManager.instance.NextLap(this);
+        }
+    }
+
     public void GainPart(PlayerPart collectedPart)
     {
         holdingParts.Add(collectedPart);
@@ -86,7 +104,7 @@ public class PlayerEntity : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire_P"+ playerIndex))
+        if (Input.GetButtonDown("Fire_P"+ playerIndex) && canMove)
         {
             ThrowPart();
         }
@@ -94,12 +112,21 @@ public class PlayerEntity : MonoBehaviour
     void FixedUpdate()
     {
         lookRotation = new Vector3(Input.GetAxis("Horizontal_P" + playerIndex), 0, -Input.GetAxis("Vertical_P" + playerIndex));
-        rb.AddForce(lookRotation * normalSpeed);
+        if (canMove)
+        {
+            rb.AddForce(lookRotation * normalSpeed);
+        }
 
         if (Input.GetAxis("Horizontal_P" + playerIndex) == 0 && Input.GetAxis("Vertical_P" + playerIndex) == 0) {
 
         } else {
             rb.rotation = Quaternion.LookRotation(lookRotation);
         }
+    }
+
+    public int CurrentLap
+    {
+        get { return currentLap; }
+        set { currentLap = value; }
     }
 }

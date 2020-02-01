@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1633390258}
   - component: {fileID: 1633390261}
   - component: {fileID: 1633390260}
-  - component: {fileID: 1633390259}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -80,19 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1633390259
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633390257}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1939505517723053843
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,10 +283,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e8a44e81aca6544b72108b557d2f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reachedMidway: 0
   playerIndex: 0
+  canMove: 0
   startParts: 5
   shootBoostSpeed: 300
-  normalSpeed: 5
+  normalSpeed: 0.2
   partsParent: {fileID: 482077371487123958}
   partPrefab: {fileID: 1514163145459366072, guid: 9d388a5326b5c6d438d92816fc9130c5,
     type: 3}
