@@ -34,6 +34,15 @@ public class GameManager : MonoBehaviour
 
     private PlayerEntity leadingPlayer;
 
+    [Header("SpawnPartsInfo")]
+    [SerializeField]
+    private int amountOfSpawnedParts = 10;
+    [SerializeField]
+    private float sizeOfPlayfield = 17f;
+
+    [SerializeField]
+    private List<GameObject> parts;
+
     private void Awake()
     {
         if (instance == null)
@@ -44,11 +53,34 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         CurrentLap = 1;
+
         ActivatesPlayers();
+        SpawnRandomParts();
+
         if (enableCountDown)
         {
             StartCountDown();
         }
+    }
+    public void SpawnRandomParts()
+    {
+        parts = new List<GameObject>();
+        foreach (PlayerEntity player in players)
+        {
+            parts.Add(player.partPrefab);
+        }
+        for (int i = 0; i < amountOfSpawnedParts; i++)
+        {
+            int randomIndex = Random.Range(0, parts.Count);
+            Vector3 spawnPos = new Vector3(
+                Random.Range(-sizeOfPlayfield, sizeOfPlayfield),
+                0,
+                Random.Range(-sizeOfPlayfield, sizeOfPlayfield)
+                );
+            Instantiate(parts[randomIndex]).transform.position = spawnPos;
+
+        }
+
     }
     public void ActivatesPlayers()
     {

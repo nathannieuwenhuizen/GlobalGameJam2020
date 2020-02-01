@@ -288,7 +288,7 @@ MonoBehaviour:
   canMove: 0
   startParts: 5
   shootBoostSpeed: 300
-  normalSpeed: 0.2
+  normalSpeed: 0.5
   partsParent: {fileID: 482077371487123958}
   partPrefab: {fileID: 1514163145459366072, guid: 9d388a5326b5c6d438d92816fc9130c5,
     type: 3}

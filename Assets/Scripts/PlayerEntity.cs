@@ -28,8 +28,7 @@ public class PlayerEntity : MonoBehaviour
     [SerializeField]
     private Transform partsParent;
 
-    [SerializeField]
-    private GameObject partPrefab;
+    public GameObject partPrefab;
 
     private Vector3 lookRotation;
 
