@@ -784,8 +784,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 817133739}
-        m_MethodName: ReloadScene
-        m_Mode: 1
+        m_MethodName: LadSceneByBuildIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -918,13 +918,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.47356853, y: -0, z: -0, w: 0.88075703}
-  m_LocalPosition: {x: 0, y: 14, z: -11.57}
+  m_LocalRotation: {x: 0.4936402, y: -0, z: -0, w: 0.8696662}
+  m_LocalPosition: {x: 0, y: 14, z: -10.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 56.532, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 59.160004, y: 0, z: 0}
 --- !u!1 &1002407977
 GameObject:
   m_ObjectHideFlags: 0
