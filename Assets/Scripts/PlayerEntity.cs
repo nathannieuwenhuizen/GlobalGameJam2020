@@ -81,7 +81,7 @@ public class PlayerEntity : MonoBehaviour
         collectedPart.gameObject.transform.parent = partsParent;
         collectedPart.Collected = true;
 
-        collectedPart.transform.localPosition = new Vector3( Random.Range(-.5f, .5f), Random.Range(-.5f, .5f), -.7f);
+        collectedPart.transform.localPosition = new Vector3(1.7f, Random.Range(-.5f, .5f), Random.Range(-.5f, .5f));
         collectedPart.transform.localRotation = Quaternion.Euler(Vector3.zero);
     }
 

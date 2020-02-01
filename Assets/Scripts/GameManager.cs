@@ -176,6 +176,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        dottedMaterial.mainTextureOffset = new Vector2(-Time.time * dotLineSpeed, 0);
+        dottedMaterial.SetTextureOffset("_BaseMap", new Vector2(-Time.time * dotLineSpeed, 0));
+        //dottedMaterial.mainTextureOffset = new Vector2(-Time.time * dotLineSpeed, 0);
     }
 }
