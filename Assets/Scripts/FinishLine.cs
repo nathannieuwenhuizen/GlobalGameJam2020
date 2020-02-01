@@ -21,7 +21,7 @@ public class FinishLine : MonoBehaviour
         for (int i = 0; i < amount; i++)
         {
             GameObject newRing = Instantiate(ringPrefab);
-            newRing.transform.position = ringStartPos.position + new Vector3(i * distanceBetweenRings, 0, 0);
+            newRing.transform.position = ringStartPos.position + new Vector3(0, 0, i * distanceBetweenRings);
             rings.Add(newRing);
         }
     }
