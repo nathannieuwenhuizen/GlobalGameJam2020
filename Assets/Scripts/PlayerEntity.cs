@@ -19,6 +19,8 @@ public class PlayerEntity : MonoBehaviour
 
     [SerializeField]
     private int startParts = 5;
+    [SerializeField]
+    private int maxParts = 10;
 
     [SerializeField]
     private ParticleSystem inktParticle;
@@ -57,7 +59,7 @@ public class PlayerEntity : MonoBehaviour
         if (other.gameObject.GetComponent<PlayerPart>())
         {
             PlayerPart part = other.gameObject.GetComponent<PlayerPart>();
-            if (!part.Collected)
+            if (!part.Collected && holdingParts.Count < maxParts)
             {
                 GainPart(part);
             }
