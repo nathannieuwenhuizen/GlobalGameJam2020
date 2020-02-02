@@ -15,7 +15,7 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: fmod_project\global_game_jam_2020.fspro
+  sourceProjectPath: fmod_project/global_game_jam_2020.fspro
   sourceBankPath: fmod_project\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
