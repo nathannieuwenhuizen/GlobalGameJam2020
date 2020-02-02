@@ -161,7 +161,7 @@ MonoBehaviour:
   enableCountDown: 1
   amountOfSpawnedParts: 70
   minRingSize: 30
-  maxRingSize: 55
+  maxRingSize: 50
   parts: []
   finishLine: {fileID: 0}
   fancyCam: {fileID: 0}
