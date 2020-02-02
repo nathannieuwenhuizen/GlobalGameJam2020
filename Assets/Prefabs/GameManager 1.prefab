@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36fcaefa9ff0f1846b57f959a7eac19b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useSettings: 0
-  amountOfLaps: 3
+  useSettings: 1
+  amountOfLaps: 1
   playerObjects:
   - {fileID: 0}
   - {fileID: 0}
@@ -157,14 +157,12 @@ MonoBehaviour:
   lapText: {fileID: 8831235029994677287}
   countDownText: {fileID: 8831235030576554749}
   countFrom: 3
-  intervalBetweenCountDown: 0.5
+  intervalBetweenCountDown: 0.8
   enableCountDown: 1
   amountOfSpawnedParts: 70
   minRingSize: 30
   maxRingSize: 55
-  parts:
-  - {fileID: 0}
-  - {fileID: 0}
+  parts: []
   finishLine: {fileID: 0}
   fancyCam: {fileID: 0}
   dottedMaterial: {fileID: 2100000, guid: 903f5a43fb01adb4fadcab4b5b19d32e, type: 2}
