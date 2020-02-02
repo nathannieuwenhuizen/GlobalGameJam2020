@@ -30,5 +30,6 @@ public class FinishLine : MonoBehaviour
         GameObject removedRing = rings[rings.Count - 1];
         rings.Remove(removedRing);
         Destroy(removedRing);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/pass_ring");
     }
 }
