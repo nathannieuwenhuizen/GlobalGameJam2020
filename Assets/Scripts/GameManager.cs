@@ -61,6 +61,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float dotLineSpeed = 2f;
 
+    [SerializeField]
+    private GameObject PauseScreen;
+    private bool paused = false;
+
     public bool gameIsRunning = true;
 
     private void Awake()
@@ -115,7 +119,12 @@ public class GameManager : MonoBehaviour
             Instantiate(parts[randomIndex]).transform.position = spawnPos;
         }
     }
-
+    public void Pause(bool val)
+    {
+        paused = val;
+        Time.timeScale = val ? 0 : 1;
+        PauseScreen.SetActive(val ? true : false);
+    }
     public void ActivatesPlayers()
     {
         //find the players
@@ -137,14 +146,20 @@ public class GameManager : MonoBehaviour
         }
 
         //apply active players to fancy cam
-        GameObject[] targets = new GameObject[players.Count];
-        for (int i = 0; i < targets.Length; i++)
+        List<GameObject> targets = new List<GameObject>();
+
+        for (int i = 0; i < fancyCam.targets.Length; i++)
         {
-            targets[i] = players[i].gameObject;
+            targets.Add(fancyCam.targets[i]);
         }
+        for (int i = 0; i < players.Count; i++)
+        {
+            targets.Add(players[i].gameObject);
+        }
+
         if (fancyCam != null)
         {
-            fancyCam.targets = targets;
+            fancyCam.targets = targets.ToArray();
         }
     }
 
@@ -225,6 +240,10 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause"))
+        {
+            Pause(!paused);
+        }
         dottedMaterial.SetTextureOffset("_BaseMap", new Vector2(-Time.time * dotLineSpeed, 0));
         //dottedMaterial.mainTextureOffset = new Vector2(-Time.time * dotLineSpeed, 0);
     }

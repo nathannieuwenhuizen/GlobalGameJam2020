@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000032532414, g: 0.001982716, b: 0.0026978971, a: 1}
+  m_IndirectSpecularColor: {r: 0.00004155419, g: 0.001982716, b: 0.0031796938, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -256,7 +256,7 @@ PrefabInstance:
     - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: startParts
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -1856,6 +1856,11 @@ PrefabInstance:
       propertyPath: normalSpeed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: startParts
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Constraints
@@ -2074,6 +2079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playerIndex
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: startParts
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -2800,6 +2810,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e52273d945647fb4399361b4b7e4732a, type: 2}
+    - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: startParts
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Constraints
@@ -2991,16 +3006,6 @@ PrefabInstance:
       propertyPath: fancyCam
       value: 
       objectReference: {fileID: 963194230}
-    - target: {fileID: 8831235029135263945, guid: 8b426c70fd013924f99a139912b7990f,
-        type: 3}
-      propertyPath: maxRingSize
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8831235029135263945, guid: 8b426c70fd013924f99a139912b7990f,
-        type: 3}
-      propertyPath: amountOfSpawnedParts
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 8831235029135263946, guid: 8b426c70fd013924f99a139912b7990f,
         type: 3}
       propertyPath: m_Name
