@@ -81,6 +81,7 @@ public class PlayerEntity : MonoBehaviour
     public void GainPart(PlayerPart collectedPart)
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/tentacle_get_2D");
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/tentacle_splash_2D");
         holdingParts.Add(collectedPart);
 
         collectedPart.gameObject.transform.parent = partsParent;
