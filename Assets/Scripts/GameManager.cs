@@ -256,7 +256,7 @@ public class GameManager : MonoBehaviour
         {
             Pause(!paused);
         }
-        dottedMaterial.SetTextureOffset("_BaseMap", new Vector2(-Time.time * dotLineSpeed, 0));
+        //dottedMaterial.SetTextureOffset("_BaseMap", new Vector2(-Time.time * dotLineSpeed, 0));
         //dottedMaterial.mainTextureOffset = new Vector2(-Time.time * dotLineSpeed, 0);
     }
 }
