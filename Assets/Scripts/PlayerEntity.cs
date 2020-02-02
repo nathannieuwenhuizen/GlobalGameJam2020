@@ -103,7 +103,7 @@ public class PlayerEntity : MonoBehaviour
             return;
         }
 
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/tentacle_get");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/tentacle_tear_off");
         lr.enabled = false;
         PlayerPart thrownPart = holdingParts[holdingParts.Count - 1];
         holdingParts.Remove(thrownPart);

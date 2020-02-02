@@ -15,7 +15,11 @@ MonoBehaviour:
   Path: event:/Sound/countdown
   guid: 99b5c0f68ccc074abd9d20e718d9c895
   Banks:
+<<<<<<< HEAD
   - {fileID: -7784501738518936183}
+=======
+  - {fileID: 5657205062425618078}
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -23,7 +27,11 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4933
+<<<<<<< HEAD
 --- !u!114 &-7784501738518936183
+=======
+--- !u!114 &-7586196420691499636
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,10 +45,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: fmod_project/Build/Desktop/Master.bank
   SubDir: 
+<<<<<<< HEAD
   lastModified: 637162013471637252
   LoadResult: 0
   FileSizes: []
   Exists: 1
+=======
+  lastModified: 637162019813528642
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
 --- !u!114 &-7562368435443185024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,7 +71,11 @@ MonoBehaviour:
   Path: event:/Music/music_main
   guid: f86d8f721415ad46bc9f6b104618ac3c
   Banks:
+<<<<<<< HEAD
   - {fileID: -7784501738518936183}
+=======
+  - {fileID: 5657205062425618078}
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -79,7 +98,11 @@ MonoBehaviour:
   Path: event:/Sound/ui_click
   guid: 300520f4aeefc340bbf2102616261a47
   Banks:
+<<<<<<< HEAD
   - {fileID: -7784501738518936183}
+=======
+  - {fileID: 5657205062425618078}
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -87,6 +110,42 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1073
+--- !u!114 &-5304985038689453178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162026388697207
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4889344115441263443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162025888599201
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-2664163174745536771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,12 +160,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: fmod_project/Build/Desktop/Master.strings.bank
   SubDir: 
+<<<<<<< HEAD
   lastModified: 637162013471656578
+=======
+  lastModified: 637162028775343326
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 982
+    Value: 944
   Exists: 1
+--- !u!114 &-353222629742670428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162024713197475
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,20 +202,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -2664163174745536771}
+<<<<<<< HEAD
   - {fileID: -7784501738518936183}
+=======
+  - {fileID: 5657205062425618078}
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   EditorEvents:
   - {fileID: 588651904608150600}
-  - {fileID: 8432004138134265422}
   - {fileID: 4386987089699607298}
   - {fileID: -8877438488154107581}
   - {fileID: -7562368435443185024}
   - {fileID: -7234879488579477952}
   EditorParameters: []
   MasterBanks:
+<<<<<<< HEAD
   - {fileID: -7784501738518936183}
   StringsBanks:
   - {fileID: -2664163174745536771}
   stringsBankWriteTime: 637162013471656578
+=======
+  - {fileID: 5657205062425618078}
+  StringsBanks:
+  - {fileID: -2664163174745536771}
+  stringsBankWriteTime: 637162028775343326
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   cacheVersion: 3
 --- !u!114 &588651904608150600
 MonoBehaviour:
@@ -151,7 +242,11 @@ MonoBehaviour:
   Path: event:/Sound/tentacle_tear_off
   guid: 3cf75b32d8499c48b032cf4148c648d8
   Banks:
+<<<<<<< HEAD
   - {fileID: -7784501738518936183}
+=======
+  - {fileID: 5657205062425618078}
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -159,24 +254,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 252
---- !u!114 &2052329354773329622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: fmod_project/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637162017575239064
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
 --- !u!114 &4386987089699607298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +269,11 @@ MonoBehaviour:
   Path: event:/Sound/tentacle_get
   guid: 6638ed4046bc844486472f59fb6f68fd
   Banks:
+<<<<<<< HEAD
   - {fileID: -7784501738518936183}
+=======
+  - {fileID: 5657205062425618078}
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -200,7 +281,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 125
---- !u!114 &4482626876219451259
+--- !u!114 &5657205062425618078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,7 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: fmod_project/Build/Desktop/Master.bank
   SubDir: 
-  lastModified: 637162013471637252
+  lastModified: 637162028775323071
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -286,8 +367,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Sound/tentacle_splash
   guid: 483e8876c827fc4aa2921670ad4aaa7c
+<<<<<<< HEAD
   Banks:
   - {fileID: -7784501738518936183}
+=======
+  Banks: []
+>>>>>>> cce0c7ad11c2fa9dcde4a9554d5ae7e4f54197f1
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -295,3 +380,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 520
+--- !u!114 &8595696469047307072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: fmod_project/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162001534634868
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
