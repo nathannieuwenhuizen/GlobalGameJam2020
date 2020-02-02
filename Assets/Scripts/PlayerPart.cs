@@ -22,7 +22,7 @@ public class PlayerPart : MonoBehaviour
 
 
     private BoxCollider boxCol;
-    // Start is called before the first frame update
+
     void Start()
     {
         boxCol = GetComponent<BoxCollider>();

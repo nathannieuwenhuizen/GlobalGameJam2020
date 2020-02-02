@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     [Header("UI")]
     [SerializeField]
-    private Text lapText;
+    private TextMeshProUGUI lapText;
     [SerializeField]
     private Text countDownText;
 
@@ -64,6 +65,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject PauseScreen;
     private bool paused = false;
+    [SerializeField]
+    private GameObject resultScreen;
+    [SerializeField]
+    private Text resultText;
 
     public bool gameIsRunning = true;
 
@@ -121,6 +126,11 @@ public class GameManager : MonoBehaviour
     }
     public void Pause(bool val)
     {
+        if (!gameIsRunning)
+        {
+            return;
+        }
+
         paused = val;
         Time.timeScale = val ? 0 : 1;
         PauseScreen.SetActive(val ? true : false);
@@ -182,7 +192,9 @@ public class GameManager : MonoBehaviour
             fancyCam.targets = new List<GameObject> { leadingPlayer.gameObject }.ToArray();
         }
         gameIsRunning = false;
-        countDownText.text = "Finish! Player " + (players.IndexOf(leadingPlayer) + 1) + "wins!";
+        resultScreen.SetActive(true);
+        resultText.text =  "Player " + (players.IndexOf(leadingPlayer) + 1) + "wins!";
+
         foreach (PlayerEntity player in players)
         {
             player.canMove = false;
@@ -240,7 +252,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause"))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause") )
         {
             Pause(!paused);
         }
