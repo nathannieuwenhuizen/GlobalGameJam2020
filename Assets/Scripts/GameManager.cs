@@ -61,6 +61,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float dotLineSpeed = 2f;
 
+    [SerializeField]
+    private GameObject PauseScreen;
+    private bool paused = false;
+
     public bool gameIsRunning = true;
 
     private void Awake()
@@ -115,7 +119,12 @@ public class GameManager : MonoBehaviour
             Instantiate(parts[randomIndex]).transform.position = spawnPos;
         }
     }
-
+    public void Pause(bool val)
+    {
+        paused = val;
+        Time.timeScale = val ? 0 : 1;
+        PauseScreen.SetActive(val ? true : false);
+    }
     public void ActivatesPlayers()
     {
         //find the players
@@ -231,6 +240,10 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause"))
+        {
+            Pause(!paused);
+        }
         dottedMaterial.SetTextureOffset("_BaseMap", new Vector2(-Time.time * dotLineSpeed, 0));
         //dottedMaterial.mainTextureOffset = new Vector2(-Time.time * dotLineSpeed, 0);
     }
