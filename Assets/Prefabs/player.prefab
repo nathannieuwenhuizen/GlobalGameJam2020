@@ -162,10 +162,11 @@ MonoBehaviour:
   reachedMidway: 0
   playerIndex: 1
   canMove: 0
-  startParts: 2
+  startParts: 4
+  maxParts: 8
   inktParticle: {fileID: 7556878377772372731}
   shootBoostSpeed: 1000
-  normalSpeed: 0
+  normalSpeed: 1
   gravitationalSpeed: 0.1
   partsParent: {fileID: 482077371487123958}
   partPrefab: {fileID: 2955573117282587579, guid: c98a961a9990eb943a2b8386f18468c8,
