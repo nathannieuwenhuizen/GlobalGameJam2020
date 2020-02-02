@@ -159,7 +159,7 @@ MonoBehaviour:
   reachedMidway: 0
   playerIndex: 1
   canMove: 0
-  startParts: 4
+  startParts: 5
   shootBoostSpeed: 500
   normalSpeed: 0
   gravitationalSpeed: 0.05
