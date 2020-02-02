@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minMass: 1
   maxMass: 3
-  throwSpeed: 300
+  throwSpeed: 1500
   maxRotationalForce: 1
   gravitationalSpeed: 0.01
 --- !u!54 &289999776290078586
