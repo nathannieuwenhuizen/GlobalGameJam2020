@@ -131,6 +131,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/ui_click");
         paused = val;
         Time.timeScale = val ? 0 : 1;
         PauseScreen.SetActive(val ? true : false);
