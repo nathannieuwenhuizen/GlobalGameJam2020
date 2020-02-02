@@ -20,6 +20,8 @@ public class PlayerEntity : MonoBehaviour
     [SerializeField]
     private int startParts = 5;
 
+    [SerializeField]
+    private ParticleSystem inktParticle;
 
     [SerializeField]
     private float shootBoostSpeed;
@@ -103,6 +105,7 @@ public class PlayerEntity : MonoBehaviour
             return;
         }
 
+        inktParticle.Play();
         FMODUnity.RuntimeManager.PlayOneShot("event:/Sound/tentacle_tear_off");
         lr.enabled = false;
         PlayerPart thrownPart = holdingParts[holdingParts.Count - 1];
