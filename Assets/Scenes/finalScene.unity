@@ -817,7 +817,7 @@ MonoBehaviour:
   targets:
   - {fileID: 1015365201}
   - {fileID: 638754501}
-  MinFOV: 16.72
+  MinFOV: 12
   MaxFOV: 100
   distanceFOVMultip: 0.08
 --- !u!114 &963194231
@@ -2092,6 +2092,11 @@ PrefabInstance:
       propertyPath: fancyCam
       value: 
       objectReference: {fileID: 963194230}
+    - target: {fileID: 8831235029135263945, guid: 8b426c70fd013924f99a139912b7990f,
+        type: 3}
+      propertyPath: maxRingSize
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8831235029135263946, guid: 8b426c70fd013924f99a139912b7990f,
         type: 3}
       propertyPath: m_Name
