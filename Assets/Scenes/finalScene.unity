@@ -433,7 +433,7 @@ Transform:
   - {fileID: 1856444474}
   - {fileID: 1907670702}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &119784253
 GameObject:
@@ -560,6 +560,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3756554467658450263, guid: 13d68608ebd66c84abd1dece2f032e04,
         type: 3}
+    - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: gravitationalSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Constraints
@@ -568,7 +573,7 @@ PrefabInstance:
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Drag
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3736316488334098923, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -623,7 +628,7 @@ PrefabInstance:
     - target: {fileID: 4631040888696438067, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4631040888696438067, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -1836,6 +1841,11 @@ PrefabInstance:
       propertyPath: startParts
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: gravitationalSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Constraints
@@ -1844,7 +1854,7 @@ PrefabInstance:
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Drag
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3736316488334098923, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -1904,7 +1914,7 @@ PrefabInstance:
     - target: {fileID: 4631040888696438067, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4631040888696438067, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -2060,10 +2070,15 @@ PrefabInstance:
       propertyPath: startParts
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: gravitationalSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Drag
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3736316488334098923, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -2123,7 +2138,7 @@ PrefabInstance:
     - target: {fileID: 4631040888696438067, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4631040888696438067, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -2272,6 +2287,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907670701}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1974416438 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+    type: 3}
+  m_PrefabInstance: {fileID: 277675338}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e8a44e81aca6544b72108b557d2f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2083206981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2795,6 +2822,11 @@ PrefabInstance:
       propertyPath: normalSpeed
       value: 0.45
       objectReference: {fileID: 0}
+    - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: gravitationalSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Constraints
@@ -2803,7 +2835,7 @@ PrefabInstance:
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Drag
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3736316488334098923, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -3160,7 +3192,7 @@ PrefabInstance:
     - target: {fileID: 8831235029135263944, guid: 8b426c70fd013924f99a139912b7990f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8831235029135263944, guid: 8b426c70fd013924f99a139912b7990f,
         type: 3}
@@ -3186,7 +3218,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1974416438}
     - target: {fileID: 8831235029135263945, guid: 8b426c70fd013924f99a139912b7990f,
         type: 3}
       propertyPath: playerObjects.Array.data[2]
@@ -3220,7 +3252,7 @@ PrefabInstance:
     - target: {fileID: 8831235029135263945, guid: 8b426c70fd013924f99a139912b7990f,
         type: 3}
       propertyPath: useSettings
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8831235029135263945, guid: 8b426c70fd013924f99a139912b7990f,
         type: 3}
