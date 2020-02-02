@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     [Header("UI")]
     [SerializeField]
-    private Text lapText;
+    private TextMeshProUGUI lapText;
     [SerializeField]
     private Text countDownText;
 
