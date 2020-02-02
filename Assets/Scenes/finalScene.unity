@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00004155419, g: 0.001982716, b: 0.0031796938, a: 1}
+  m_IndirectSpecularColor: {r: 0.000032532414, g: 0.001982716, b: 0.0026978971, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -227,6 +227,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9322aaa2566dd3c44b44cbc17bd5e488, type: 2}
+    - target: {fileID: 1459661334244515599, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2dfb01082a237b346a427e236a4428c2, type: 2}
     - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: playerIndex
@@ -236,7 +241,7 @@ PrefabInstance:
         type: 3}
       propertyPath: partPrefab
       value: 
-      objectReference: {fileID: 4817271893206459359, guid: 3c4cc7d65f2e7f6448148d045e78bb97,
+      objectReference: {fileID: 3756554467658450263, guid: 13d68608ebd66c84abd1dece2f032e04,
         type: 3}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -1197,7 +1202,7 @@ PrefabInstance:
         type: 3}
       propertyPath: partPrefab
       value: 
-      objectReference: {fileID: 3756554467658450263, guid: 13d68608ebd66c84abd1dece2f032e04,
+      objectReference: {fileID: 1514163145459366072, guid: 9d388a5326b5c6d438d92816fc9130c5,
         type: 3}
     - target: {fileID: 3483956227636515898, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
@@ -1284,6 +1289,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1459661334244515599, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd725f393929a5349b45ab825f95217d, type: 2}
+    - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: partPrefab
+      value: 
+      objectReference: {fileID: 4817271893206459359, guid: 3c4cc7d65f2e7f6448148d045e78bb97,
+        type: 3}
     - target: {fileID: 3813006169489411606, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: m_Name
@@ -1571,7 +1587,7 @@ PrefabInstance:
     - target: {fileID: 2610286617169959313, guid: f57c30e793ccaaf41a0065885fc1089f,
         type: 3}
       propertyPath: distanceBetweenRings
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f57c30e793ccaaf41a0065885fc1089f, type: 3}
@@ -1815,7 +1831,7 @@ PrefabInstance:
     - target: {fileID: 3177604145258723526, guid: a83bb903b65bfe642bf7e564849cc5a0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.211737
+      value: 14.4
       objectReference: {fileID: 0}
     - target: {fileID: 3177604145258723526, guid: a83bb903b65bfe642bf7e564849cc5a0,
         type: 3}
@@ -1896,6 +1912,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2739c14c8b97b4049bb8aa4ec604e792, type: 2}
+    - target: {fileID: 1459661334244515599, guid: 815ef40b147f8e5479b62ba1c0b0c856,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e52273d945647fb4399361b4b7e4732a, type: 2}
     - target: {fileID: 3405729497650637190, guid: 815ef40b147f8e5479b62ba1c0b0c856,
         type: 3}
       propertyPath: playerIndex
